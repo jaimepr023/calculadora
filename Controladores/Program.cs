@@ -22,21 +22,56 @@ namespace calculadora
 
             while(!cerrarMenu)
             {
+                opcionSelect = menuInterfaz.menuBucle();
+                Console.WriteLine(opcionSelect);
                 switch()
                 {
                     case 0:
+                        Console.WriteLine("[INFOS]-Se cerrara la aplicación");
+                        cerrarMenu = true;
                         break;
                     case 1:
+                        int n1;
+                        int n2;
+                        Console.WriteLine("Indique el primer operando:");
+                        n1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Indique el segundo operando:");
+                        n2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("El resultado de la operación es:");
+                        int resultado =n1+n2;
                         break;
                     case 2:
+                        int n1;
+                        int n2;
+                        Console.WriteLine("Indique el primer operando:");
+                        n1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Indique el segundo operando:");
+                        n2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("El resultado de la operación es:");
+                        int resultado = n1 - n2;
                         break;
                     case 3:
+                        int n1;
+                        int n2;
+                        Console.WriteLine("Indique el primer operando:");
+                        n1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Indique el segundo operando:");
+                        n2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("El resultado de la operación es:");
+                        int resultado = n1 * n2;
                         break;
                     case 4:
-                        break;
-                    case 5:
+                        int n1;
+                        int n2;
+                        Console.WriteLine("Indique el primer operando:");
+                        n1 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Indique el segundo operando:");
+                        n2 = int.Parse(Console.ReadLine());
+                        Console.WriteLine("El resultado de la operación es:");
+                        float resultado = n1/n2;
                         break;
                     default:
+                        Console.WriteLine("[INFOS]-La opcion seleccionada no existe")
                         break;
                 }
             }
